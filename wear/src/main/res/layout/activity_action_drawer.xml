@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.drawer.WearableDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="上に引っ張りたまえ"/>
+
+    <android.support.wearable.view.drawer.WearableActionDrawer
+        android:id="@+id/bottom_action_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue" />
+
+</android.support.wearable.view.drawer.WearableDrawerLayout>
