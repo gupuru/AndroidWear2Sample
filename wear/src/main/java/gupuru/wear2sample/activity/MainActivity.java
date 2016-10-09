@@ -1,4 +1,4 @@
-package gupuru.wear2sample;
+package gupuru.wear2sample.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import gupuru.wear2sample.R;
 import gupuru.wear2sample.adapter.MainContentsAdapter;
 
 public class MainActivity extends WearableActivity implements WearableListView.ClickListener {

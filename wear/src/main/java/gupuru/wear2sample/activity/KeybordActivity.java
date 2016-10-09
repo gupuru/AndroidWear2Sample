@@ -1,4 +1,4 @@
-package gupuru.wear2sample;
+package gupuru.wear2sample.activity;
 
 import android.os.Bundle;
 import android.support.wearable.activity.WearableActivity;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
+import gupuru.wear2sample.R;
 
 /**
  * keyboard

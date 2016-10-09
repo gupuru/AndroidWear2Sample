@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_star"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:title="Star"/>
+    <item android:id="@+id/menu_check"
+        android:icon="@drawable/ic_check_circle_black_24dp"
+        android:title="Check" />
+</menu>

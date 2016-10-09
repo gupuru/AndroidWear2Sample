@@ -1,4 +1,4 @@
-package gupuru.wear2sample;
+package gupuru.wear2sample.activity;
 
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
+import gupuru.wear2sample.R;
 import gupuru.wear2sample.adapter.CurvedLayoutRecyclerAdapter;
 import gupuru.wear2sample.util.MyOffsettingHelper;
 
@@ -51,7 +52,7 @@ public class CurvedLayoutActivity extends WearableActivity {
         array.add("blue");
         array.add("yellow");
         array.add("poooooooooooooo");
-        
+
         CurvedLayoutRecyclerAdapter curvedLayoutRecyclerAdapter
                 = new CurvedLayoutRecyclerAdapter(CurvedLayoutActivity.this, array);
         wearableRecyclerView.setAdapter(curvedLayoutRecyclerAdapter);

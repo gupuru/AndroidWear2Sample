@@ -17,7 +17,7 @@
             android:required="false" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.DeviceDefault.Light">
             <intent-filter>
@@ -27,16 +27,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".KeybordActivity"
+        <activity android:name=".activity.KeybordActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light"/>
 
-        <activity android:name=".WearableNavigationDrawerActivity"
+        <activity android:name=".activity.WearableNavigationDrawerActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light"/>
 
-        <activity android:name=".WearableActionDrawerActivity"
+        <activity android:name=".activity.WearableActionDrawerActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light"/>
 
-        <activity android:name=".CurvedLayoutActivity"
+        <activity android:name=".activity.CurvedLayoutActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light"/>
 
     </application>

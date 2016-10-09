@@ -5,5 +5,7 @@
     <string name="action_drawer">Action Drawer</string>
     <string name="navigation_drawer">Navigation Drawer</string>
     <string name="curved_layout">Curved Layout</string>
+    <string name="pull_down">Pull down</string>
+    <string name="pull_up">Pull up</string>
 
 </resources>

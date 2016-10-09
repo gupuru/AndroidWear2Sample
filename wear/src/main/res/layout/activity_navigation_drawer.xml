@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:layout_gravity="center"
-        android:text="下に引っ張りたまえ"/>
+        android:text="@string/pull_down"/>
 
     <android.support.wearable.view.drawer.WearableNavigationDrawer
         android:id="@+id/top_navigation_drawer"
