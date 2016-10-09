@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Wear2Sample</string>
-    <string name="hello_world">Hello World!</string>
+
+    <string name="keyboard">Keyboard</string>
+    <string name="action_drawer">Action Drawer</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="curved_layout">Curved Layout</string>
+
 </resources>

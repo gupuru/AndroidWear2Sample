@@ -72,9 +72,10 @@ public class MainActivity extends WearableActivity implements WearableListView.C
 
     private void loadAdapter() {
         List<String> items = new ArrayList<>();
-        items.add("キーボード");
-        items.add("Action Drawer");
-        items.add("Navigation Drawer");
+        items.add(getString(R.string.keyboard));
+        items.add(getString(R.string.action_drawer));
+        items.add(getString(R.string.navigation_drawer));
+        items.add(getString(R.string.curved_layout));
 
         MainContentsAdapter adapter = new MainContentsAdapter(this, items);
 
@@ -96,6 +97,10 @@ public class MainActivity extends WearableActivity implements WearableListView.C
                 break;
             case 2:
                 intent = new Intent(MainActivity.this, WearableNavigationDrawerActivity.class);
+                startActivity(intent);
+                break;
+            case 3:
+                intent = new Intent(MainActivity.this, CurvedLayoutActivity.class);
                 startActivity(intent);
                 break;
         }

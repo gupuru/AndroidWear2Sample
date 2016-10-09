@@ -36,6 +36,9 @@
         <activity android:name=".WearableActionDrawerActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light"/>
 
+        <activity android:name=".CurvedLayoutActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light"/>
+
     </application>
 
 </manifest>
