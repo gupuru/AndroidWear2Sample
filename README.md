@@ -3,6 +3,7 @@
 - keyboard
 - WearableActionDrawer
 - WearableNavigationDrawer
+- WearableRecyclerView
 
 # Reference
 
