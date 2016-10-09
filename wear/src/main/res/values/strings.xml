@@ -7,5 +7,6 @@
     <string name="curved_layout">Curved Layout</string>
     <string name="pull_down">Pull down</string>
     <string name="pull_up">Pull up</string>
+    <string name="network">Network</string>
 
 </resources>

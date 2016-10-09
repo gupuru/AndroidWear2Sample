@@ -3,8 +3,9 @@
     package="gupuru.wear2sample">
 
     <uses-feature android:name="android.hardware.type.watch" />
-
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -37,6 +38,9 @@
             android:theme="@android:style/Theme.DeviceDefault.Light"/>
 
         <activity android:name=".activity.CurvedLayoutActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light"/>
+
+        <activity android:name=".activity.NetworkActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light"/>
 
     </application>
