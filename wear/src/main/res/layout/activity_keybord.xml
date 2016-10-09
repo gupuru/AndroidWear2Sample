@@ -17,21 +17,21 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="ふつうのテキスト"
+            android:hint="@string/text"
             android:inputType="text"
             app:layout_box="all" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="メアド"
+            android:hint="@string/mail"
             android:inputType="textEmailAddress"
             app:layout_box="all" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="パスワード"
+            android:hint="@string/password"
             android:inputType="textPassword"
             app:layout_box="all" />
 

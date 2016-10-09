@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Wear2Sample</string>
-
     <string name="keyboard">Keyboard</string>
     <string name="action_drawer">Action Drawer</string>
     <string name="navigation_drawer">Navigation Drawer</string>
@@ -8,5 +7,8 @@
     <string name="pull_down">Pull down</string>
     <string name="pull_up">Pull up</string>
     <string name="network">Network</string>
+    <string name="text">Text</string>
+    <string name="mail">Mail</string>
+    <string name="password">Password</string>
 
 </resources>
