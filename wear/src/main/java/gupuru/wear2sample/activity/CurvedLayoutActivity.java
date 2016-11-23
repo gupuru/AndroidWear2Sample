@@ -16,6 +16,7 @@ import java.util.Locale;
 
 import gupuru.wear2sample.R;
 import gupuru.wear2sample.adapter.CurvedLayoutRecyclerAdapter;
+import gupuru.wear2sample.model.RecyclerViewItemModel;
 import gupuru.wear2sample.util.MyOffsettingHelper;
 
 public class CurvedLayoutActivity extends WearableActivity {
@@ -43,15 +44,20 @@ public class CurvedLayoutActivity extends WearableActivity {
 
         wearableRecyclerView.setOffsettingHelper(myOffsettingHelper);
 
-        ArrayList<String> array = new ArrayList<>();
-        array.add("apple");
-        array.add("orange");
-        array.add("window");
-        array.add("green");
-        array.add("red");
-        array.add("blue");
-        array.add("yellow");
-        array.add("poooooooooooooo");
+        ArrayList<RecyclerViewItemModel> array = new ArrayList<>();
+        RecyclerViewItemModel item1 = new RecyclerViewItemModel(R.string.app_name, R.drawable.kitune);
+        RecyclerViewItemModel item2 = new RecyclerViewItemModel(R.string.keyboard, R.drawable.kitune);
+        RecyclerViewItemModel item3 = new RecyclerViewItemModel(R.string.app_name, R.drawable.kitune);
+        RecyclerViewItemModel item4 = new RecyclerViewItemModel(R.string.app_name, R.drawable.kitune);
+        RecyclerViewItemModel item5 = new RecyclerViewItemModel(R.string.app_name, R.drawable.kitune);
+        RecyclerViewItemModel item6 = new RecyclerViewItemModel(R.string.app_name, R.drawable.kitune);
+
+        array.add(item1);
+        array.add(item2);
+        array.add(item3);
+        array.add(item4);
+        array.add(item5);
+        array.add(item6);
 
         CurvedLayoutRecyclerAdapter curvedLayoutRecyclerAdapter
                 = new CurvedLayoutRecyclerAdapter(CurvedLayoutActivity.this, array);

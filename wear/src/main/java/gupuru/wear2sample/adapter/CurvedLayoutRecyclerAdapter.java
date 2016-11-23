@@ -6,6 +6,7 @@ import android.support.wearable.view.WearableRecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,25 +14,28 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import gupuru.wear2sample.R;
+import gupuru.wear2sample.model.RecyclerViewItemModel;
 
 public class CurvedLayoutRecyclerAdapter extends WearableRecyclerView.Adapter<CurvedLayoutRecyclerAdapter.ViewHolder> {
 
-    private ArrayList<String> mData;
+    private ArrayList<RecyclerViewItemModel> recyclerViewItemModels;
     private Context mContext;
 
-    public CurvedLayoutRecyclerAdapter(Context context, ArrayList<String> data) {
-        mContext = context;
-        mData = data;
+    public CurvedLayoutRecyclerAdapter(Context context, ArrayList<RecyclerViewItemModel> recyclerViewItemModels) {
+        this.mContext = context;
+        this.recyclerViewItemModels = recyclerViewItemModels;
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView mTextView;
+        private ImageView imageView;
         private LinearLayout linearLayout;
 
         ViewHolder(View view) {
             super(view);
             mTextView = (TextView) view.findViewById(R.id.text_item);
+            imageView = (ImageView) view.findViewById(R.id.image_item);
             linearLayout = (LinearLayout) view.findViewById(R.id.layout);
         }
     }
@@ -44,12 +48,13 @@ public class CurvedLayoutRecyclerAdapter extends WearableRecyclerView.Adapter<Cu
 
     @Override
     public void onBindViewHolder(CurvedLayoutRecyclerAdapter.ViewHolder holder, final int position) {
-        if (mData != null && !mData.isEmpty() ) {
-            holder.mTextView.setText(mData.get(position));
+        if (recyclerViewItemModels != null && !recyclerViewItemModels.isEmpty() ) {
+            holder.mTextView.setText(recyclerViewItemModels.get(position).getTitle());
+            holder.imageView.setImageResource(recyclerViewItemModels.get(position).getImage());
             holder.linearLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(mContext, mData.get(position), Toast.LENGTH_LONG).show();
+                    Toast.makeText(mContext, recyclerViewItemModels.get(position).getTitle(), Toast.LENGTH_LONG).show();
                 }
             });
         }
@@ -57,8 +62,8 @@ public class CurvedLayoutRecyclerAdapter extends WearableRecyclerView.Adapter<Cu
 
     @Override
     public int getItemCount() {
-        if (mData != null && !mData.isEmpty()) {
-            return mData.size();
+        if (recyclerViewItemModels != null && !recyclerViewItemModels.isEmpty()) {
+            return recyclerViewItemModels.size();
         }
         return 0;
     }

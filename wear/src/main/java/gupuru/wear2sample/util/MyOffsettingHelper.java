@@ -25,6 +25,7 @@ public class MyOffsettingHelper extends DefaultOffsettingHelper {
 
         child.setScaleX(1 - mProgressToCenter);
         child.setScaleY(1 - mProgressToCenter);
+
     }
 
     @Override
