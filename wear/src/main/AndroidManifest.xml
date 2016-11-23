@@ -43,6 +43,9 @@
         <activity android:name=".activity.NetworkActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light"/>
 
+        <activity android:name=".activity.SmartReplyActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light"/>
+
     </application>
 
 </manifest>

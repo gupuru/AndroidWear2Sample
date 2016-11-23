@@ -78,6 +78,7 @@ public class MainActivity extends WearableActivity implements WearableListView.C
         items.add(getString(R.string.navigation_drawer));
         items.add(getString(R.string.curved_layout));
         items.add(getString(R.string.network));
+        items.add(getString(R.string.smart_reply));
 
         MainContentsAdapter adapter = new MainContentsAdapter(this, items);
 
@@ -106,6 +107,9 @@ public class MainActivity extends WearableActivity implements WearableListView.C
                 startActivity(intent);
             case 4:
                 intent = new Intent(MainActivity.this, NetworkActivity.class);
+                startActivity(intent);
+            case 5:
+                intent = new Intent(MainActivity.this, SmartReplyActivity.class);
                 startActivity(intent);
                 break;
         }
